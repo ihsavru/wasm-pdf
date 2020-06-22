@@ -22,7 +22,7 @@
       pdfFileBlobURL = URL.createObjectURL(blob);
       // for debugging purposes, open another window
       //window.open(pdfFileBlobURL, "_blank");
-      window.location.href = pdfFileBlobURL;
+      window.open(pdfFileBlobURL, '_blank');
     }
 
     let jsonOut = (data) => {

@@ -1,364 +1,719 @@
 {
-    "title": "Example Document",
-    "template": {
-        "top": 50,
-        "left": 50,
-        "right": 50,
-        "bottom": 50
-    },
-    "contents": [{
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "Dynamic PDF Document",
-                "font_size": 18,
-                "leading": 24,
-                "font_name": "Helvetica-Bold"
-            }
+  "title": "Example Document",
+  "template": {
+    "top": 0,
+    "left": 0,
+    "right": 0,
+    "bottom": 0
+  },
+  "stationary": [
+    {
+      "obj_type": "PageNumber",
+      "params": {
+        "font_size": 10,
+        "font_name": "Helvetica",
+        "x": 545,
+        "y": 30,
+        "align": "right"
+      }
+    }
+  ],
+  "contents": [
+    {
+      "obj_type": "Table",
+      "params": {
+        "style": {
+          "grid": {
+            "width": 0.25,
+            "color": [
+              0.6,
+              0.6,
+              0.6
+            ],
+            "background_color": [
+              0.1,
+              0.6,
+              0.6
+            ]
+          },
+          "align": {
+            "vertical": "middle"
+          }
         },
-        {
-            "obj_type": "Paragraph",
+        "rows": [
+          {
+            "obj_type": "Row",
             "params": {
-                "text": "This PDF document was generated dynamically in your browser. No server resources were utilized.",
-                "font_name": "Helvetica-Bold",
-                "font_size": 12,
-                "align": "left"
-            }
-        },
-        {
-            "obj_type": "Table",
-            "params": {
-                "style": {
-                    "grid": {
-                        "width": 0.25,
-                        "color": [0.6, 0.6, 0.6]
+              "cells": [
+                {
+                  "obj_type": "Cell",
+                  "params": {
+                    "style": {
+                      "background_color": [
+                        0.22353,
+                        0.25882,
+                        0.30588
+                      ]
                     },
-                    "padding": {
-                        "left": 5.0,
-                        "right": 5.0,
-                        "top": 5.0,
-                        "bottom": 5.0
-                    },
-                    "align": {
-                        "vertical": "middle"
-                    }
-                },
-                "rows": [{
-                        "obj_type": "Row",
+                    "contents": [
+                      {
+                        "obj_type": "Image",
                         "params": {
-                            "cells": [{
-                                    "obj_type": "Cell",
-                                    "params": {
-                                        "span": 3,
-                                        "style": {
-                                            "background_color": [0.9, 0.9, 0.95]
-                                        },
-                                        "contents": [{
-                                                "obj_type": "Paragraph",
-                                                "params": {
-                                                    "text": "This is a Table defined in JSON",
-                                                    "align": "center",
-                                                    "font_name": "Helvetica-Bold"
-                                                }
-                                            },
-                                            {
-                                                "obj_type": "Paragraph",
-                                                "params": {
-                                                    "text": "Check out examples/text-example.json from this repository. It's easy to create content with JSON.",
-                                                    "font_size": 10,
-                                                    "leading": 10,
-                                                    "align": "center"
-                                                }
-                                            },
-                                            {
-                                                "obj_type": "Paragraph",
-                                                "params": {
-                                                    "text": "This cell spans 3 columns...",
-                                                    "font_size": 10,
-                                                    "leading": 10,
-                                                    "align": "center"
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                {
-                                    "obj_type": "Cell",
-                                    "params": {
-                                        "contents": [{
-                                            "obj_type": "Paragraph",
-                                            "params": {
-                                                "text": "Red Cell",
-                                                "align": "center",
-                                                "color": [1, 1, 1]
-                                            }
-                                        }],
-                                        "style": {
-                                            "background_color": [1, 0, 0]
-                                        }
-                                    }
-                                },
-                                {
-                                    "obj_type": "Cell",
-                                    "params": {
-                                        "contents": [{
-                                                "obj_type": "Paragraph",
-                                                "params": {
-                                                    "text": "Sample Image",
-                                                    "align": "center",
-                                                    "font_name": "Courier-Oblique",
-                                                    "font_size": 10,
-                                                    "padding": {
-                                                        "bottom": 5
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "obj_type": "Image",
-                                                "params": {
-                                                    "src": "./pizza.jpg",
-                                                    "fit_width": true
-                                                }
-                                            },
-                                            {
-                                                "obj_type": "Paragraph",
-                                                "params": {
-                                                    "text": "Yummy!",
-                                                    "align": "center",
-                                                    "font_name": "courier-bold-oblique",
-                                                    "font_size": 10,
-                                                    "padding": {
-                                                        "top": 5
-                                                    }
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                {
-                                    "obj_type": "Cell",
-                                    "params": {
-                                        "contents": [{
-                                            "obj_type": "Paragraph",
-                                            "params": {
-                                                "text": "Cell 4"
-                                            }
-                                        }]
-                                    }
-                                }
-                            ]
+                          "src": "./HackerRank_logo.png",
+                          "align": "left"
                         }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "obj_type": "Row",
+            "params": {
+              "cells": [
+                {
+                  "obj_type": "Cell",
+                  "params": {
+                    "style": {
+                      "background_color": [
+                        0.95294,
+                        0.96863,
+                        0.96863
+                      ]
                     },
-                    {
-                        "obj_type": "Row",
+                    "contents": [
+                      {
+                        "obj_type": "Paragraph",
                         "params": {
-                            "cells": [{
-                                "obj_type": "Cell",
-                                "params": {
-                                    "contents": [{
-                                            "obj_type": "Paragraph",
-                                            "params": {
-                                                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus quis est ac ultrices. Pellentesque turpis massa, interdum at tempus ac, tincidunt sit amet neque. Cras nisl sapien, molestie sed nibh vitae, tincidunt fermentum nisl. Vivamus sed velit finibus, congue libero vel, elementum dui. Vestibulum nulla odio, laoreet a aliquam id, fermentum at eros.",
-                                                "font_size": 10,
-                                                "leading": 10,
-                                                "align": "left"
-                                            }
-                                        },
+                          "text": "Sample Full-stack Developer Hiring Test > alexander_schneider@mertz.name",
+                          "align": "left",
+                          "font_size": 10,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 8,
+                            "top": 8,
+                            "bottom": 8
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "obj_type": "Row",
+            "params": {
+              "cells": [
+                {
+                  "obj_type": "Cell",
+                  "params": {
+                    "span": 0.5,
+                    "style": {
+                      "background_color": [
+                        1,
+                        1,
+                        1
+                      ]
+                    },
+                    "contents": [
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Full Name:",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 20,
+                            "top": 30
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Email:",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Test Name:",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Taken On:",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Time taken:",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Work Experience:",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Invited By:",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 20,
+                            "top": 10,
+                            "bottom": 30
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "obj_type": "Cell",
+                  "params": {
+                    "style": {
+                      "background_color": [
+                        1,
+                        1,
+                        1
+                      ]
+                    },
+                    "contents": [
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Alexander Schneider",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "padding": {
+                            "left": 20,
+                            "top": 30
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "alexander_schneider@mertz.name",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Sample Full-stack Developer Hiring Test",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "27 Dec 2018 22:13:03 IST",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "77 min/ 90 min",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "4 years",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Akshay",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "padding": {
+                            "left": 20,
+                            "top": 10,
+                            "bottom": 30
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "obj_type": "Cell",
+                  "params": {
+                    "style": {
+                      "background_color": [
+                        1,
+                        1,
+                        1
+                      ]
+                    },
+                    "contents": [
+                      {
+                        "obj_type": "Table",
+                        "params": {
+                          "rows": [
+                            {
+                              "obj_type": "Row",
+                              "params": {
+                                "cells": [
+                                  {
+                                    "obj_type": "Cell",
+                                    "params": {
+                                      "style": {
+                                        "background_color": [
+                                          0.22353,
+                                          0.25882,
+                                          0.30588
+                                        ]
+                                      },
+                                      "contents": [
                                         {
-                                            "obj_type": "Paragraph",
-                                            "params": {
-                                                "text": "Centered Text",
-                                                "align": "center"
-                                            }
+                                          "obj_type": "Image",
+                                          "params": {
+                                            "src": "./HackerRank_logo.png",
+                                            "align": "left"
+                                          }
                                         }
-                                    ]
-                                }
-                            }]
-                        }
-                    },
-                    {
-                        "obj_type": "Row",
-                        "params": {
-                            "cells": [{
-                                "obj_type": "Cell",
-                                "params": {
-                                    "contents": [{
-                                        "obj_type": "Path",
-                                        "params": {
-                                            "points": [
-                                                [0, 20],
-                                                [0, 0],
-                                                [30, 0],
-                                                [30, 20],
-                                                [15, 30]
-                                            ],
-                                            "stroke_color": [1, 0, 0],
-                                            "stroke_width": 2.0,
-                                            "fill_color": [0, 0, 1],
-                                            "align": "center"
-                                        }
-                                    },
-                                    {
-                                        "obj_type": "Paragraph",
-                                            "params": {
-                                                "text": "Here is a custom path",
-                                                "align": "center",
-                                                "font_name": "Helvetica-Bold",
-                                                "color": [1, 0, 0]
-                                            }
+                                      ]
                                     }
+                                  },
+                                  {
+                                    "obj_type": "Cell",
+                                    "params": {
+                                      "style": {
+                                        "background_color": [
+                                          0.22353,
+                                          0.25882,
+                                          0.30588
+                                        ]
+                                      },
+                                      "contents": [
+                                        {
+                                          "obj_type": "Image",
+                                          "params": {
+                                            "src": "./HackerRank_logo.png",
+                                            "align": "left"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
                                 ]
-                                }
-                            }]
+                              }
+                            }
+                          ]
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tincidunt nisl. Integer bibendum, leo sed lobortis mollis, orci ante vulputate velit, id ultricies diam mauris consequat neque. Integer et nibh lectus. Cras felis massa, vehicula eget consequat sit amet, bibendum et est. Morbi ultrices id metus quis mollis. Suspendisse condimentum tristique est, sit amet tempor nulla semper sit amet. Aliquam luctus lacinia porta. In et tellus tincidunt, faucibus nisi in, vestibulum urna. Vestibulum eu neque massa. Morbi id tellus euismod, congue diam non, varius ligula. Etiam vel diam gravida eros molestie iaculis dictum ac ligula. Sed rutrum sagittis massa eu feugiat. Etiam blandit iaculis bibendum.",
-                "font_name": "Helvetica",
-                "font_size": 12,
-                "align": "center"
-            }
-        },
-        {
-          "obj_type": "Paragraph",
-          "params": {
-            "text": "Another Centered Image",
-            "align": "center",
-            "font_size": 18,
-            "padding": {
-                "top": 5,
-                "bottom": 10
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           }
-        },
-        {
-          "obj_type": "Image",
-          "params": {
-            "src": "./pizza.jpg",
-            "align": "center"
-          }
-        },
-        {
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "This centered text is generated with Times font",
-                "font_size": 18,
-                "leading": 24,
-                "align": "center",
-                "padding": {
-                    "bottom": 5,
-                    "top": 10
-                },
-                "font_name": "times-bold"
-
-            }
-        },
-        {
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tincidunt nisl. Integer bibendum, leo sed lobortis mollis, orci ante vulputate velit, id ultricies diam mauris consequat neque. Integer et nibh lectus. Cras felis massa, vehicula eget consequat sit amet, bibendum et est. Morbi ultrices id metus quis mollis. Suspendisse condimentum tristique est, sit amet tempor nulla semper sit amet. Aliquam luctus lacinia porta. In et tellus tincidunt, faucibus nisi in, vestibulum urna. Vestibulum eu neque massa. Morbi id tellus euismod, congue diam non, varius ligula. Etiam vel diam gravida eros molestie iaculis dictum ac ligula. Sed rutrum sagittis massa eu feugiat. Etiam blandit iaculis bibendum.",
-                "font_name": "Times",
-                "font_size": 12,
-                "align": "left"
-            }
-        },
-        {
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tincidunt nisl. Integer bibendum, leo sed lobortis mollis, orci ante vulputate velit, id ultricies diam mauris consequat neque. Integer et nibh lectus. Cras felis massa, vehicula eget consequat sit amet, bibendum et est.",
-                "font_name": "Times",
-                "font_size": 12,
-                "bullet": "•",
-                "bullet_indent": 12,
-                "padding": {
-                    "left": 20.0,
-                    "right": 0.0,
-                    "top": 10.0,
-                    "bottom": 0.0
-                }
-            }
-        },
-        {
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "Another bullet generated here.",
-                "font_name": "Times",
-                "font_size": 12,
-                "bullet": "•",
-                "bullet_indent": 12,
-                "padding": {
-                    "left": 20.0,
-                    "right": 0.0,
-                    "top": 10.0,
-                    "bottom": 0.0
-                }
-            }
-        },
-        {
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "This is Courier",
-                "font_size": 18,
-                "leading": 24,
-                "font_name": "Courier-Bold-Oblique"
-
-            }
-        },
-        {
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "Courier is fixed width font. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tincidunt nisl. Integer bibendum, leo sed lobortis mollis, orci ante vulputate velit, id ultricies diam mauris consequat neque. Integer et nibh lectus. Cras felis massa, vehicula eget consequat sit amet, bibendum et est.",
-                "font_name": "courier",
-                "font_size": 12,
-                "align": "left"
-            }
-        },
-        {
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "Courier is fixed width font. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tincidunt nisl. Integer bibendum, leo sed lobortis mollis, orci ante vulputate velit, id ultricies diam mauris consequat neque. Integer et nibh lectus. Cras felis massa, vehicula eget consequat sit amet, bibendum et est.",
-                "font_name": "courier",
-                "font_size": 12,
-                "align": "left"
-            }
-        },
-        {
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "As you can see, this text flows dynamically to another page.",
-                "font_size": 14,
-                "align": "center",
-                "font_name": "Helvetica-Bold"
-            }
-        },
-        {
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "After this paragraph, comes a 100 point spacer element.",
-                "font_size": 14,
-                "align": "center",
-                "font_name": "Helvetica-Bold",
-                "color": [1, 0, 0]
-            }
-        },
-        {
-            "obj_type": "Spacer",
-            "params": {
-                "height": 100
-            }
-        },
-        {
-            "obj_type": "Paragraph",
-            "params": {
-                "text": "Thanks!",
-                "font_size": 24,
-                "align": "center",
-                "font_name": "Helvetica-Bold-Oblique"
-            }
+        ]
+      }
+    },
+    {
+      "obj_type": "Paragraph",
+      "params": {
+        "text": "Recruiter/Team Comments:",
+        "align": "left",
+        "font_size": 8,
+        "font_name": "Helvetica",
+        "padding": {
+          "left": 20,
+          "top": 20,
+          "bottom": 20
         }
-    ]
+      }
+    },
+    {
+      "obj_type": "Table",
+      "params": {
+        "style": {
+          "grid": {
+            "width": 0.25,
+            "color": [
+              0.6,
+              0.6,
+              0.6
+            ]
+          },
+          "align": {
+            "vertical": "middle"
+          },
+          "padding": {
+            "left": 20,
+            "right": 5.0,
+            "top": 5.0,
+            "bottom": 5.0
+          }
+        },
+        "rows": [
+          {
+            "obj_type": "Row",
+            "params": {
+              "cells": [
+                {
+                  "obj_type": "Cell",
+                  "params": {
+                    "style": {
+                      "background_color": [
+                        0.95294,
+                        0.96863,
+                        0.96863
+                      ]
+                    },
+                    "contents": [
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "No Comments.",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "obj_type": "Table",
+      "params": {
+        "style": {
+          "grid": {
+            "width": 0.25,
+            "color": [
+              0.6,
+              0.6,
+              0.6
+            ],
+            "background_color": [
+              0.1,
+              0.6,
+              0.6
+            ]
+          },
+          "align": {
+            "vertical": "middle"
+          }
+        },
+        "rows": [
+          {
+            "obj_type": "Row",
+            "params": {
+              "cells": [
+                {
+                  "obj_type": "Cell",
+                  "params": {
+                    "span": 3,
+                    "style": {
+                      "background_color": [
+                        1,
+                        1,
+                        1
+                      ]
+                    },
+                    "contents": [
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Q1 Buying Show Tickets > Coding ",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 20,
+                            "top": 30
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Q2 Distinct Pairs > Coding",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Q3 Given a full binary tree with n internal nodes, how many leaf nodes does it have > Multiple Choice",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "Q4 A Priority-Queue is implemented as a Max-Heap. Initially, it has 5 elements. > Multiple Choice",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "color": [0.45098, 0.56078, 0.57647],
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "obj_type": "Cell",
+                  "params": {
+                    "style": {
+                      "background_color": [
+                        1,
+                        1,
+                        1
+                      ]
+                    },
+                    "contents": [
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "25 min 7 sec",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "padding": {
+                            "left": 20,
+                            "top": 30
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "44 min",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "2 min",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      },
+                      {
+                        "obj_type": "Paragraph",
+                        "params": {
+                          "text": "5 min 10 sec",
+                          "align": "left",
+                          "font_size": 8,
+                          "font_name": "Helvetica",
+                          "padding": {
+                            "left": 20,
+                            "top": 10
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "obj_type": "Cell",
+                  "params": {
+                    "style": {
+                      "background_color": [
+                        1,
+                        1,
+                        1
+                      ]
+                    },
+                    "contents": [
+                      {
+                        "obj_type": "Table",
+                        "params": {
+                          "rows": [
+                            {
+                              "obj_type": "Row",
+                              "params": {
+                                "cells": [
+                                  {
+                                    "obj_type": "Cell",
+                                    "params": {
+                                      "style": {
+                                        "background_color": [
+                                          0.22353,
+                                          0.25882,
+                                          0.30588
+                                        ]
+                                      },
+                                      "contents": [
+                                        {
+                                          "obj_type": "Image",
+                                          "params": {
+                                            "src": "./HackerRank_logo.png",
+                                            "align": "left"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "obj_type": "Cell",
+                                    "params": {
+                                      "style": {
+                                        "background_color": [
+                                          0.22353,
+                                          0.25882,
+                                          0.30588
+                                        ]
+                                      },
+                                      "contents": [
+                                        {
+                                          "obj_type": "Image",
+                                          "params": {
+                                            "src": "./HackerRank_logo.png",
+                                            "align": "left"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
 }
